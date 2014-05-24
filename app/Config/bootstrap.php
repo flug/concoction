@@ -27,14 +27,6 @@ Cache::config('default', array('engine' => 'File'));
 
 /**
  *
- * Define lib core fo CakePHP
- *
- */
-
-define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . 'vendors'.DS.'cakephp'.DS.'cakephp'.DS.'lib');
-
-/**
- *
  * Autoload for composer
  *
  */
