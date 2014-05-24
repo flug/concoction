@@ -1,0 +1,50 @@
+{
+    "name": "flug/cakeapp",
+    "description": "Skeleton for CakePHP 2 app",
+    "license": "MIT",
+    "authors": [
+    {
+        "name": "Flug",
+        "email": "flugv1@gmail.com"
+    }
+    ],
+        "minimum-stability": "dev",
+        "config": {
+            "vendor-dir": "vendors"
+        },
+        "repositories" : [
+        {
+            "type": "package",
+            "package": {
+                "name" : "cakephp/cakephp",
+                "version" : "2.5.1",
+                "source" : {
+                    "type" : "git",
+                    "url" : "git://github.com/cakephp/cakephp.git",
+                    "reference" : "2.5.1"
+                },
+                "bin" : ["lib/Cake/Console/cake"]
+            }
+        }
+    ],
+        "autoload": {
+            "psr-0": {
+                "app\\Console\\Installer": "",
+                "": "./Plugin"
+            }
+        },
+        "scripts": {
+            "post-install-cmd": "app\\Console\\Installer::postInstall"
+        },
+        "extra": {
+            "installer-paths": {
+                "app/Plugin/DebugKit": ["cakephp/debug_kit"]
+            }
+        },
+        "require" : {
+            "php": ">=5.2.8",
+            "cakephp/cakephp" : "2.5.1",
+            "cakephp/debug_kit": "2.2.*"
+        }
+
+}
