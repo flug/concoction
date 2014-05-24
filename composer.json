@@ -17,6 +17,9 @@
     "extra": {
         "installer-paths": {
             "app/Plugin/DebugKit": ["cakephp/debug_kit"]
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
         }
     },
     "require" : {
