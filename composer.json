@@ -6,20 +6,6 @@
     "config": {
         "vendor-dir": "vendors"
     },
-    "repositories" : [
-        {
-            "type": "package",
-            "package": {
-                "name" : "cakephp/cakephp",
-                "version" : "2.5.1",
-                "source" : {
-                    "type" : "git",
-                    "url" : "git://github.com/cakephp/cakephp.git",
-                    "reference" : "2.5.1"
-                }
-            }
-        }
-    ],
     "autoload": {
         "psr-0": {
             "app\\Console\\Installer": ""
