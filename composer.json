@@ -2,17 +2,11 @@
     "name": "flug/concoction",
     "description": "Skeleton for CakePHP 2 app",
     "license": "MIT",
-    "authors": [
-    {
-        "name": "Flug",
-        "email": "flugv1@gmail.com"
-    }
-    ],
-        "minimum-stability": "dev",
-        "config": {
-            "vendor-dir": "vendors"
-        },
-        "repositories" : [
+    "type": "project",
+    "config": {
+        "vendor-dir": "vendors"
+    },
+    "repositories" : [
         {
             "type": "package",
             "package": {
