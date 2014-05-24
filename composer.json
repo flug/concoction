@@ -12,7 +12,8 @@
         }
     },
     "scripts": {
-        "post-install-cmd": "app\\Console\\Installer::postInstall"
+        "post-install-cmd": "app\\Console\\Installer::postInstall",
+        "post-update-cmd":  "app\\Console\\Installer::postUpdate"
     },
     "extra": {
         "installer-paths": {

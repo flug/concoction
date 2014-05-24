@@ -37,6 +37,13 @@ class Installer {
 		static::setSecuritySalt($rootDir, $io);
 	}
 
+	public static function postUpdate(Event $event){
+		$io = $event->getIO();
+		$rootDir = dirname(dirname(__DIR__));
+		static::setTmpPermissions($rootDir, $io);
+	}
+
+
 /**
  * Create the Config/app.php file if it does not exist.
  *
