@@ -1,4 +1,6 @@
 app/Config/bootstrap.php.default
 app/Config/database.php
 vendors
+app/tmp
+app/Plugin
 
